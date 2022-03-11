@@ -1,10 +1,14 @@
-let hour = 1;
+/*let hour = 1;
 if (hour <= 6 && hour < 12){
 console.log('good moring');
-else if (hour >=12 && hour < 18){
+else 
+}
+if (hour >=12 && hour < 18){
    console.log('Good aftnoon');
-else console.log('Good Evening');
-
+}
+else {
+    console.log('Good Evening');
+}
 let role = 'guest';
 
 switch (role){
@@ -58,8 +62,8 @@ function max (a,b){
 
  }
  
- let number =islandscope(300, 500);
- console.log(number);
+ let numbers =islandscope(300, 500);
+ console.log(numbers);
 
  function islandscope (width, height){
      if (width > height) return true;
@@ -106,6 +110,20 @@ checkSpeed(150);
             if (i % 2 === 0) console.log(i, 'Eveen');
             else console.log(i, 'Odd');
         }
-    }
+    }*/
 
+const marks = [80, 80, 50];
+    console.log(calculateGrade (marks));
     
+function calculateGrade(marks) {
+    let sum = 0;
+    for (let mark of marks)
+    sum += mark;
+    let average = sum / marks.length;
+
+    if (average < 60) return 'f';
+    if (average < 70) return 'd';
+    if (average < 80) return 'c';
+    if (average < 90) return 'b';
+    return 'a'
+}   
